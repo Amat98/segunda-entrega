@@ -1,0 +1,571 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    list-style: none;
+}
+
+/*fondos*/
+
+body{
+    display: grid;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.body-index{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-art {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.body-can {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.body-nosotros {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.body-contacto {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+/*MENU HAMBURGUESA*/
+.logo-uno{
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+
+.logo-dos{
+    display: none;
+}
+
+.victor{
+    display: none;
+}
+
+nav{
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-btn{
+    color: rgb(249, 45, 45);
+    font-size: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 110px;
+    background-color: rgba(0, 0, 0, .90);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgb(255, 40, 40);
+    transition: .5s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+/*MAIN*/
+
+/*MAIN INDEX*/
+
+.main-index{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+    
+}
+.main-index h1{
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    
+}
+.main-index h2{
+    color: white;
+    text-shadow: 4px 4px 4px rgb(121, 10, 10);
+}
+
+/*MAIN ARTISTAS*/
+
+.img-uno{
+    width: 350px;
+    margin-top: 20px;
+}
+
+.main-art{
+    color: rgb(252, 58, 58);
+    font-size: 40px;
+    text-align: center;
+}
+
+.sub-titulo-uno{
+    color: white;
+    font-size: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.sub-titulo-dos{
+    color: white;
+    font-size: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.cuadro-uno{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.img-dos{
+    width: 350px;
+    margin-top: 0px;
+}
+
+
+.cuadro-dos{
+    background-color: rgba(0, 0, 0, .60);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+/*MAIN CANCIONES*/
+
+
+.video-uno{
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+  
+  
+  
+.video-uno iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+ }
+  
+.youtube-uno{
+    width: 450px;
+    margin: auto;
+}
+
+
+.video-dos{
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+  
+  
+  
+.video-dos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+ }
+  
+.youtube-dos{
+    width: 450px;
+    margin: auto;
+}
+
+
+
+
+.imagen-uno{
+    display: none;
+}
+
+.imagen-dos{
+    display: none;
+}
+
+
+
+
+.titulo{
+    color: rgb(245, 28, 28);
+}
+
+
+
+
+.main-can{
+    color: white;
+    font-size: 35px;
+    
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.list-uno{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+.lista-uno, .lista-dos{
+    padding: 10px;
+    text-align: center;
+}
+
+.list-dos{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+.lista-uno li:hover{
+    color: rgb(253, 45, 45);
+    transition: .5s;
+    font-size: 38px;
+}
+
+.lista-dos li:hover{
+    color: rgb(253, 45, 45);
+    transition: .5s;
+    font-size: 38px;
+}
+
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    font-size: 25px;
+}
+
+/*RESPONSIVE TABLET*/
+
+@media screen and (min-width: 768px){
+    
+    .logo-uno{
+        display: none;
+    }
+    .logo-dos{
+        display: block;
+        width: 650px;
+    }
+    .victor{
+        display: block;
+        width: 450px;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    /*main-can*/
+
+    .list-uno{
+        display: grid;
+        grid-template-areas: "img lista";
+    }
+
+    .imagen-uno{
+        grid-area: img;
+    }
+
+    .lista-uno{
+        grid-area: lista;
+    }
+
+
+    .youtube-uno{
+        width: 500px;
+    }
+
+    
+
+    .list-dos{
+        display: grid;
+        grid-template-areas: "lista img";
+    }
+
+    .imagen-dos{
+        grid-area: img;
+    }
+
+    .lista-dos{
+        grid-area: lista;
+    }
+
+
+    .youtube-dos{
+        width: 500px;
+    }
+
+}
+
+
+/*RESPONSIVE ESCRITORIO*/
+@media screen and (min-width:1200px){
+
+    .logo-dos{
+        width: 600px;
+        margin-left: 10px;
+    }
+
+
+
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 20px;
+        
+
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 10px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 30px;
+    }
+
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color: rgb(255, 255, 255);
+        transition: .8s;
+        background-color: rgb(255, 50, 50);
+        font-size: 33px;
+        
+        
+        
+         
+    }
+
+    /*MAIN-ART*/
+
+    
+
+    .cuadro-uno{
+        display: grid;
+        grid-template-areas:"img-uno titulo-uno";
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .titulo-uno{
+        grid-area: titulo-uno;
+        margin-top: 30px;
+    }
+
+    .sub-titulo-uno{
+        text-align: left;
+    }
+
+    .img-uno{
+        grid-area: img-uno;
+        margin-top: 0;
+    }
+
+
+    .cuadro-dos{
+        display: grid;
+        grid-template-areas: "titulo-dos img-dos";
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .img-dos{
+        grid-area: img-dos;
+    }
+    .titulo-dos{
+        grid-area: titulo-dos;
+        
+    }
+
+    .sub-titulo-dos{
+        text-align: left;
+    }
+
+    /*MAIN CANCIONES*/
+
+    .imagen-uno{
+        display: block;
+        width: 350px;
+    }
+
+    .list-uno{
+        display: grid;
+        grid-template-areas: "img lista video";
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .imagen-uno{
+        grid-area: img;
+    }
+
+    .lista-uno{
+        grid-area: lista;
+    }
+
+    .youtube-uno{
+        grid-area: video;
+        width: 550px;
+    }
+
+
+    .imagen-dos{
+        display: block;
+        width: 350px;
+        margin-left: auto;
+    }
+
+    .list-dos{
+        display: grid;
+        grid-template-areas: "video lista img";
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .imagen-dos{
+        grid-area: img;
+    }
+
+    .lista-dos{
+        grid-area: lista;
+    }
+
+    .youtube-dos{
+        grid-area: video;
+        width: 550px;
+    }
+
+    
+}
+
+@media screen and (min-width:1400px){
+
+    .list-uno, .list-dos{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
